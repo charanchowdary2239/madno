@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HEAD -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madno House of Sundaes | Eluru</title>
+    <meta name="description" content="Madno House of Sundaes — a premium dessert destination in Eluru serving delicious sundaes, ice creams, shakes, waffles and sweet treats.">
+    <meta name="theme-color" content="#233B6E">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Madno House of Sundaes | Eluru">
+    <meta property="og:description" content="Where irresistible sundaes, creamy desserts and good vibes come together in Eluru.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon using official Madno Logo -->
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="apple-touch-icon" href="logo.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand" aria-label="Madno House of Sundaes Home">
+                <img src="logo.jpg" alt="Madno House of Sundaes Logo" class="brand-logo" width="46" height="46">
+                <div class="brand-text-wrapper">
+                    <span class="brand-name">madno</span>
+                    <span class="brand-sub">HOUSE OF SUNDAES</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#featured" class="nav-link">Featured</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#specials" class="nav-link">Specials</a>
+                <a href="#why-madno" class="nav-link">Why Madno</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Nav Actions (Desktop) -->
+            <div class="nav-actions">
+                <a href="https://www.instagram.com/madno.eluru/" target="_blank" rel="noopener noreferrer" class="btn-instagram-icon" aria-label="Visit Madno on Instagram" title="@madno.eluru">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <span class="instagram-handle-nav">@madno.eluru</span>
+                </a>
+                <a href="#menu" class="btn btn-primary btn-sm">View Menu</a>
+                
+                <!-- Mobile Hamburger Button -->
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+        <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+            <div class="mobile-drawer-header">
+                <div class="brand-text-wrapper">
+                    <span class="brand-name">madno</span>
+                    <span class="brand-sub">HOUSE OF SUNDAES</span>
+                </div>
+                <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close navigation menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-nav-links">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#about" class="mobile-link">About Madno</a>
+                <a href="#featured" class="mobile-link">Signature Items</a>
+                <a href="#menu" class="mobile-link">Full Menu</a>
+                <a href="#specials" class="mobile-link">Madno Specials</a>
+                <a href="#why-madno" class="mobile-link">Why Madno</a>
+                <a href="#gallery" class="mobile-link">Dessert Gallery</a>
+                <a href="#contact" class="mobile-link">Visit & Contact</a>
+            </nav>
+            <div class="mobile-drawer-footer">
+                <a href="#menu" class="btn btn-primary btn-full mobile-cta">Explore Full Menu</a>
+                <a href="https://www.instagram.com/madno.eluru/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-full">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    Follow @madno.eluru
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-elements">
+                <div class="hero-glow hero-glow-1"></div>
+                <div class="hero-glow hero-glow-2"></div>
+                <div class="hero-shape hero-shape-1"></div>
+                <div class="hero-shape hero-shape-2"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge-pill">
+                        <img src="logo.jpg" alt="Madno Icon" class="hero-pill-icon" width="24" height="24">
+                        <span>MADNO HOUSE OF SUNDAES • ELURU</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        SWEET MOMENTS.<br>
+                        <span class="gradient-text">COOLER MEMORIES.</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Where irresistible handcrafted sundaes, velvety thick shakes, warm Belgian waffles, and good vibes come together in the heart of Eluru.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#menu" class="btn btn-primary btn-lg">
+                            <span>EXPLORE MENU</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary btn-lg">
+                            <span>VISIT MADNO</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-perks">
+                        <div class="hero-perk-item">
+                            <span class="perk-dot"></span>
+                            <span>Premium Sundaes</span>
+                        </div>
+                        <div class="hero-perk-item">
+                            <span class="perk-dot"></span>
+                            <span>Freshly Prepared</span>
+                        </div>
+                        <div class="hero-perk-item">
+                            <span class="perk-dot"></span>
+                            <span>Cozy Atmosphere</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card-stack">
+                        <div class="hero-main-card">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=85" alt="Madno Brownie Blast Sundae" class="hero-main-img" width="540" height="600">
+                            <div class="hero-card-overlay">
+                                <span class="badge badge-special">SIGNATURE</span>
+                                <h3>Brownie Blast Sundae</h3>
+                                <p>Warm fudge brownie, rich chocolate sauce, vanilla ice cream & roasted nuts</p>
+                                <div class="hero-card-footer">
+                                    <span class="hero-price">₹199</span>
+                                    <a href="#menu" class="btn-card-action">View in Menu →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Accent Badges -->
+                        <div class="floating-tag tag-top">
+                            <div class="tag-icon">🍨</div>
+                            <div class="tag-content">
+                                <span class="tag-label">Handcrafted Fresh</span>
+                                <span class="tag-value">House of Sundaes</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-tag tag-bottom">
+                            <div class="tag-icon">💙</div>
+                            <div class="tag-content">
+                                <span class="tag-label">Eluru’s Favourite</span>
+                                <span class="tag-value">Good Vibes Only</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-media">
+                        <div class="about-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1000&q=85" alt="Madno Sundaes and Desserts Experience" class="about-img" loading="lazy">
+                            <div class="about-badge-card">
+                                <img src="logo.jpg" alt="Madno Logo Emblem" class="about-badge-logo" width="60" height="60">
+                                <div>
+                                    <h4>Madno House of Sundaes</h4>
+                                    <p>Crafted for sweet cravings in Eluru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <div class="section-tag">ABOUT MADNO</div>
+                        <h2 class="section-title">Where Sweet Cravings Meet Unforgettable Memories</h2>
+                        <p class="about-text">
+                            <strong>Madno House of Sundaes</strong> is a dessert-focused cafe designed especially for those who cherish sweet treats, joyful gatherings, and beautifully presented indulgences.
+                        </p>
+                        <p class="about-text">
+                            From towering artisanal sundaes and velvety thick shakes to crispy golden Belgian waffles, decadent brownies, and savory cafe bites, every creation at Madno is prepared with genuine passion, premium ingredients, and vibrant vibes for friends, families, and dessert lovers.
+                        </p>
+
+                        <div class="about-features-grid">
+                            <div class="about-feat-item">
+                                <div class="about-feat-icon">🍨</div>
+                                <div>
+                                    <h5>SIGNATURE SUNDAES</h5>
+                                    <p>Artisanal layers of creamy ice creams, crunches, and rich warm sauces.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-feat-item">
+                                <div class="about-feat-icon">✨</div>
+                                <div>
+                                    <h5>FRESHLY PREPARED</h5>
+                                    <p>Made fresh on every order to guarantee the crunchiest, creamiest perfection.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-feat-item">
+                                <div class="about-feat-icon">🍫</div>
+                                <div>
+                                    <h5>PREMIUM DESSERTS</h5>
+                                    <p>Authentic Belgian waffles, molten brownies, shakes, and signature creations.</p>
+                                </div>
+                            </div>
+
+                            <div class="about-feat-item">
+                                <div class="about-feat-icon">🎉</div>
+                                <div>
+                                    <h5>GOOD VIBES</h5>
+                                    <p>A lively, cozy, Instagram-worthy setting perfect for sharing happy moments.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta">
+                            <a href="#menu" class="btn btn-primary">Discover Our Flavours</a>
+                            <a href="#contact" class="btn btn-ghost">Plan Your Visit →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED -->
+        <section class="section featured-section" id="featured">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">HANDPICKED SPECIALITIES</div>
+                    <h2 class="section-title">SIGNATURE MADNO</h2>
+                    <p class="section-subtitle">
+                        Our most celebrated and mouthwatering creations, loved by every dessert enthusiast in Eluru.
+                    </p>
+                </div>
+
+                <div class="featured-grid" id="featured-grid">
+                    <!-- Featured items will be populated dynamically from script.js to ensure easy maintenance -->
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="section menu-section" id="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">EXPLORE OUR DELIGHTS</div>
+                    <h2 class="section-title">FULL CAFE MENU</h2>
+                    <p class="section-subtitle">
+                        From classic sundaes and loaded thick shakes to warm waffles, pizzas, and cafe coolers.
+                    </p>
+                </div>
+
+                <!-- Menu Search Bar -->
+                <div class="menu-search-wrapper">
+                    <div class="search-input-group">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="menu-search" class="search-input" placeholder="Search your favourite dessert..." aria-label="Search cafe menu">
+                        <button class="search-clear-btn" id="search-clear" aria-label="Clear search" style="display: none;">✕</button>
+                    </div>
+                </div>
+
+                <!-- Menu Category Filter Buttons (Horizontally scrollable on mobile) -->
+                <div class="menu-categories-container">
+                    <div class="menu-categories" id="category-pills" role="tablist" aria-label="Menu categories">
+                        <button class="category-pill active" data-category="ALL" role="tab" aria-selected="true">ALL</button>
+                        <button class="category-pill" data-category="SUNDAES" role="tab" aria-selected="false">SUNDAES</button>
+                        <button class="category-pill" data-category="ICE CREAM" role="tab" aria-selected="false">ICE CREAM</button>
+                        <button class="category-pill" data-category="THICK SHAKES" role="tab" aria-selected="false">THICK SHAKES</button>
+                        <button class="category-pill" data-category="MILKSHAKES" role="tab" aria-selected="false">MILKSHAKES</button>
+                        <button class="category-pill" data-category="WAFFLES" role="tab" aria-selected="false">WAFFLES</button>
+                        <button class="category-pill" data-category="PANCAKES" role="tab" aria-selected="false">PANCAKES</button>
+                        <button class="category-pill" data-category="BROWNIES" role="tab" aria-selected="false">BROWNIES</button>
+                        <button class="category-pill" data-category="CAKES & DESSERTS" role="tab" aria-selected="false">CAKES & DESSERTS</button>
+                        <button class="category-pill" data-category="COFFEE" role="tab" aria-selected="false">COFFEE</button>
+                        <button class="category-pill" data-category="COLD BEVERAGES" role="tab" aria-selected="false">COLD BEVERAGES</button>
+                        <button class="category-pill" data-category="MOCKTAILS" role="tab" aria-selected="false">MOCKTAILS</button>
+                        <button class="category-pill" data-category="SNACKS" role="tab" aria-selected="false">SNACKS</button>
+                        <button class="category-pill" data-category="PASTA" role="tab" aria-selected="false">PASTA</button>
+                        <button class="category-pill pill-special" data-category="SIGNATURE MADNO" role="tab" aria-selected="false">⭐ SIGNATURE MADNO</button>
+                    </div>
+                </div>
+
+                <!-- Live Results Meta -->
+                <div class="menu-meta-bar">
+                    <span id="menu-counter" class="menu-counter">Loading items...</span>
+                    <span id="active-filter-label" class="active-filter-badge">Category: All</span>
+                </div>
+
+                <!-- Dynamic Menu Cards Grid -->
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Populated dynamically by script.js -->
+                </div>
+
+                <!-- Empty State if no search matches -->
+                <div class="menu-empty-state" id="menu-empty" style="display: none;">
+                    <div class="empty-icon">🔍</div>
+                    <h3>No sweet matches found</h3>
+                    <p>Try searching for another flavor like "Brownie", "Oreo", "Waffle", or clear your filter.</p>
+                    <button class="btn btn-primary btn-sm" id="btn-reset-filter">Show All Items</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIALS -->
+        <section class="section specials-section" id="specials">
+            <div class="container">
+                <div class="specials-banner">
+                    <div class="specials-banner-header text-center">
+                        <div class="badge badge-pill-light">ONLY AT MADNO</div>
+                        <h2 class="specials-title">MADNO SPECIALS</h2>
+                        <p class="specials-subtitle">
+                            Signature showstoppers crafted with premium craftsmanship, indulgent sauces, and rich layers.
+                        </p>
+                    </div>
+
+                    <div class="specials-grid">
+                        <!-- Special 1 -->
+                        <div class="special-card">
+                            <div class="special-img-box">
+                                <img src="https://images.unsplash.com/photo-1568644396922-5c3bfae12521?auto=format&fit=crop&w=800&q=85" alt="Madno Special Sundae" loading="lazy">
+                                <span class="badge badge-special">MADNO SPECIAL</span>
+                            </div>
+                            <div class="special-body">
+                                <h3>Madno Special Sundae</h3>
+                                <p>A lavish tower of signature ice creams, warm molten brownie chunks, roasted nuts, drizzled fudge, and Belgian chocolate swirls.</p>
+                                <div class="special-footer">
+                                    <span class="special-price">₹249</span>
+                                    <button class="btn btn-primary btn-sm btn-quick-enquiry" data-item="Madno Special Sundae" data-price="₹249">Enquire Item</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Special 2 -->
+                        <div class="special-card">
+                            <div class="special-img-box">
+                                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=85" alt="Madno Signature Thick Shake" loading="lazy">
+                                <span class="badge badge-special">MADNO SPECIAL</span>
+                            </div>
+                            <div class="special-body">
+                                <h3>Madno Signature Thick Shake</h3>
+                                <p>Thick, velvety, ultra-creamy shake blended with Belgian chocolate gelato, crushed wafer crispies, and whipped cream topping.</p>
+                                <div class="special-footer">
+                                    <span class="special-price">₹229</span>
+                                    <button class="btn btn-primary btn-sm btn-quick-enquiry" data-item="Madno Signature Thick Shake" data-price="₹229">Enquire Item</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Special 3 -->
+                        <div class="special-card">
+                            <div class="special-img-box">
+                                <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=85" alt="Madno Special Waffle" loading="lazy">
+                                <span class="badge badge-special">MADNO SPECIAL</span>
+                            </div>
+                            <div class="special-body">
+                                <h3>Madno Special Waffle</h3>
+                                <p>Golden crisp Belgian waffle loaded with Nutella, molten dark chocolate, crushed Oreos, and a generous scoop of vanilla bean ice cream.</p>
+                                <div class="special-footer">
+                                    <span class="special-price">₹229</span>
+                                    <button class="btn btn-primary btn-sm btn-quick-enquiry" data-item="Madno Special Waffle" data-price="₹229">Enquire Item</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY MADNO -->
+        <section class="section why-section" id="why-madno">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">THE MADNO DIFFERENCE</div>
+                    <h2 class="section-title">WHY MADNO</h2>
+                    <p class="section-subtitle">
+                        Every scoop, drizzle, and shake is made with love, passion, and uncompromising quality.
+                    </p>
+                </div>
+
+                <div class="why-grid">
+                    <!-- Feature 1 -->
+                    <div class="why-card">
+                        <div class="why-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </div>
+                        <h3>PREMIUM DESSERTS</h3>
+                        <p>We source fine cocoa, velvety ice creams, fresh crunches, and authentic recipes for pure dessert decadence.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="why-card">
+                        <div class="why-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                            </svg>
+                        </div>
+                        <h3>FRESHLY PREPARED</h3>
+                        <p>Every sundae, waffle, and thick shake is made fresh to order, ensuring maximum flavor, temperature, and texture.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="why-card">
+                        <div class="why-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>PERFECT FOR SHARING</h3>
+                        <p>Generous portions, dessert platters, and celebration-worthy sundaes made to be shared with friends and loved ones.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="why-card">
+                        <div class="why-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3>GOOD VIBES ONLY</h3>
+                        <p>A fun, youthful, and cozy cafe atmosphere where laughter is sweet and every visit feels like a celebration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="section gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">MADNO MOMENTS</div>
+                    <h2 class="section-title">SWEET GALLERY</h2>
+                    <p class="section-subtitle">
+                        A glimpse into our dessert artistry. Click any photo to open full-screen view.
+                    </p>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Populated dynamically with high-res photography and interactive lightbox handlers -->
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTAGRAM -->
+        <section class="section instagram-section" id="instagram">
+            <div class="container">
+                <div class="instagram-box">
+                    <div class="instagram-header text-center">
+                        <div class="instagram-icon-badge">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </div>
+                        <h2 class="section-title">FOLLOW MADNO</h2>
+                        <a href="https://www.instagram.com/madno.eluru/" target="_blank" rel="noopener noreferrer" class="instagram-handle-link">
+                            @madno.eluru
+                        </a>
+                        <p class="section-subtitle">
+                            Tag us in your sweetest moments and follow our journey on Instagram for specials, new creations, and cafe vibes!
+                        </p>
+                        <a href="https://www.instagram.com/madno.eluru/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            FOLLOW US ON INSTAGRAM
+                        </a>
+                    </div>
+
+                    <!-- Instagram Styled Photo Strip -->
+                    <div class="instagram-cards-grid">
+                        <div class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80" alt="Madno Sundae Gram" loading="lazy">
+                            <div class="insta-overlay">
+                                <span>❤️ @madno.eluru</span>
+                            </div>
+                        </div>
+                        <div class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Madno Shakes Gram" loading="lazy">
+                            <div class="insta-overlay">
+                                <span>❤️ @madno.eluru</span>
+                            </div>
+                        </div>
+                        <div class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=600&q=80" alt="Madno Waffles Gram" loading="lazy">
+                            <div class="insta-overlay">
+                                <span>❤️ @madno.eluru</span>
+                            </div>
+                        </div>
+                        <div class="insta-item">
+                            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Madno Brownies Gram" loading="lazy">
+                            <div class="insta-overlay">
+                                <span>❤️ @madno.eluru</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT / LOCATION -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Location Info Card -->
+                    <div class="location-card">
+                        <div class="section-tag">LOCATION & CONTACT</div>
+                        <h2 class="section-title">VISIT MADNO</h2>
+                        <h3 class="location-brand-name">MADNO HOUSE OF SUNDAES</h3>
+                        
+                        <div class="location-details">
+                            <div class="location-detail-item">
+                                <div class="detail-icon">📍</div>
+                                <div>
+                                    <!-- Street address is intentionally left to Eluru as instructed -->
+                                    <span class="detail-label">City:</span>
+                                    <p class="detail-value">Eluru, Andhra Pradesh</p>
+                                </div>
+                            </div>
+
+                            <div class="location-detail-item">
+                                <div class="detail-icon">📷</div>
+                                <div>
+                                    <span class="detail-label">Instagram:</span>
+                                    <p class="detail-value">
+                                        <a href="https://www.instagram.com/madno.eluru/" target="_blank" rel="noopener noreferrer">@madno.eluru</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="location-detail-item">
+                                <div class="detail-icon">🍦</div>
+                                <div>
+                                    <span class="detail-label">Experience:</span>
+                                    <p class="detail-value">Dine-in Desserts, Sundaes, Shakes & Cafe Bites</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Directions CTA -->
+                        <div class="location-actions">
+                            <a href="https://maps.google.com/?q=Madno+House+of+Sundaes+Eluru" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                                </svg>
+                                GET DIRECTIONS
+                            </a>
+
+                            <!-- EDITABLE WHATSAPP BUTTON: Add actual Madno phone number below when available -->
+                            <div class="whatsapp-wrapper" id="whatsapp-container">
+                                <!-- When phone number is available, replace href with: https://wa.me/91XXXXXXXXXX?text=Hi%20Madno%2C%20I%20would%20like%20to%20know%20more -->
+                                <a href="https://www.instagram.com/madno.eluru/" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full" id="whatsapp-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                    </svg>
+                                    CONNECT VIA INSTAGRAM / WHATSAPP
+                                </a>
+                                <small class="whatsapp-note">* WhatsApp direct chat can be configured with your phone number in script.js</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enquiry / Party Form Card -->
+                    <div class="enquiry-card">
+                        <div class="enquiry-card-header">
+                            <h3>SEND AN ENQUIRY</h3>
+                            <p>Planning a sweet celebration, birthday dessert table, or have questions? Get in touch!</p>
+                        </div>
+
+                        <form id="general-enquiry-form" class="enquiry-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="enquiry-name">Your Name *</label>
+                                    <input type="text" id="enquiry-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="enquiry-phone">Phone Number *</label>
+                                    <input type="tel" id="enquiry-phone" class="form-control" placeholder="e.g. 9876543210" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="enquiry-date">Preferred Date</label>
+                                    <input type="date" id="enquiry-date" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="enquiry-time">Preferred Time</label>
+                                    <input type="time" id="enquiry-time" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="enquiry-guests">Number of Guests</label>
+                                <select id="enquiry-guests" class="form-control">
+                                    <option value="1-2">1 - 2 Guests</option>
+                                    <option value="3-5" selected>3 - 5 Guests</option>
+                                    <option value="6-10">6 - 10 Guests</option>
+                                    <option value="10+">10+ Guests (Party/Gathering)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="enquiry-message">Your Message</label>
+                                <textarea id="enquiry-message" rows="3" class="form-control" placeholder="Tell us about your celebration or any special dessert requests..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>SEND ENQUIRY</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+
+                            <!-- Frontend Confirmation Message -->
+                            <div class="form-status-alert" id="enquiry-success" style="display: none;">
+                                <div class="alert-icon">✓</div>
+                                <div class="alert-body">
+                                    <strong>Thank you! Your enquiry has been received.</strong>
+                                    <p>We look forward to serving sweet moments to you at Madno House of Sundaes!</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrapper">
+                        <img src="logo.jpg" alt="Madno House of Sundaes Official Logo" class="footer-logo" width="56" height="56">
+                        <div class="brand-text-wrapper">
+                            <span class="brand-name">madno</span>
+                            <span class="brand-sub">HOUSE OF SUNDAES</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        A premium dessert destination in Eluru dedicated to handcrafted sundaes, velvety thick shakes, warm Belgian waffles, and good vibes with every bite.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/madno.eluru/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Madno Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span>@madno.eluru</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Madno</a></li>
+                        <li><a href="#featured">Signature Picks</a></li>
+                        <li><a href="#menu">Full Menu</a></li>
+                        <li><a href="#specials">Madno Specials</a></li>
+                        <li><a href="#gallery">Dessert Gallery</a></li>
+                        <li><a href="#contact">Contact & Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#menu" data-footer-cat="SUNDAES">Artisanal Sundaes</a></li>
+                        <li><a href="#menu" data-footer-cat="THICK SHAKES">Velvety Thick Shakes</a></li>
+                        <li><a href="#menu" data-footer-cat="WAFFLES">Belgian Waffles</a></li>
+                        <li><a href="#menu" data-footer-cat="BROWNIES">Hot Brownies</a></li>
+                        <li><a href="#menu" data-footer-cat="MOCKTAILS">Refreshing Mocktails</a></li>
+                        <li><a href="#menu" data-footer-cat="SNACKS">Cafe Bites & Snacks</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Visit Us</h4>
+                    <p class="footer-info-text">
+                        <strong>MADNO HOUSE OF SUNDAES</strong><br>
+                        Eluru, Andhra Pradesh
+                    </p>
+                    <p class="footer-info-text">
+                        Connect on Instagram:<br>
+                        <a href="https://www.instagram.com/madno.eluru/" target="_blank" rel="noopener noreferrer" class="link-highlight">@madno.eluru</a>
+                    </p>
+                    <a href="#contact" class="btn btn-outline btn-sm">Get Directions</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Madno House of Sundaes. All rights reserved.</p>
+                <p class="footer-badge-tag">Crafted for Dessert Lovers in Eluru 🍨</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- 1. Interactive Menu Item Enquiry Modal -->
+    <div class="modal-backdrop" id="item-modal-backdrop" aria-hidden="true">
+        <div class="modal-window" id="item-modal" role="dialog" aria-modal="true" aria-labelledby="modal-item-name">
+            <button class="modal-close-btn" id="item-modal-close" aria-label="Close modal">✕</button>
+            <div class="modal-content-grid">
+                <div class="modal-image-box">
+                    <img id="modal-item-img" src="" alt="Menu Item Preview">
+                    <span id="modal-item-badge" class="badge badge-modal">SIGNATURE</span>
+                </div>
+                <div class="modal-info-box">
+                    <div class="modal-item-header">
+                        <span id="modal-item-cat" class="modal-cat-tag">SUNDAES</span>
+                        <h3 id="modal-item-name">Brownie Blast Sundae</h3>
+                        <div id="modal-item-price" class="modal-item-price">₹199</div>
+                    </div>
+                    <p id="modal-item-desc" class="modal-item-desc">
+                        Chocolate brownie, vanilla ice cream and chocolate sauce
+                    </p>
+
+                    <form id="item-enquiry-form" class="modal-form">
+                        <div class="quantity-selector-group">
+                            <label>Quantity:</label>
+                            <div class="quantity-controls">
+                                <button type="button" class="btn-qty" id="qty-minus" aria-label="Decrease quantity">−</button>
+                                <span class="qty-display" id="qty-val">1</span>
+                                <button type="button" class="btn-qty" id="qty-plus" aria-label="Increase quantity">+</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-user-name">Your Name *</label>
+                            <input type="text" id="modal-user-name" class="form-control form-control-sm" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-user-phone">Phone Number *</label>
+                            <input type="tel" id="modal-user-phone" class="form-control form-control-sm" placeholder="Phone number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modal-user-msg">Special Instructions (Optional)</label>
+                            <textarea id="modal-user-msg" rows="2" class="form-control form-control-sm" placeholder="e.g. Extra nuts, celebration visit..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            SEND ENQUIRY
+                        </button>
+
+                        <div class="modal-status-alert" id="modal-success" style="display: none;">
+                            ✓ Enquiry received! We'll be ready for your sweet craving.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Gallery Lightbox Modal -->
+    <div class="lightbox-backdrop" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Madno Gallery Preview">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Floating Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript (strictly single script file as required) -->
+    <script src="script.js"></script>
+</body>
+</html>
